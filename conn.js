@@ -71,7 +71,7 @@ if (chats == undefined) { chats = '' }
 const prefix = /^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/gi) : '#'
 const isGroup = msg.key.remoteJid.endsWith('@g.us')
 const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-const isOwner = [`${setting.ownerNumber}`,"6281548907132@s.whatsapp.net","6281548907132@s.whatsapp.net"].includes(sender) ? true : false
+const isOwner = [`${setting.ownerNumber}`,"6282262642007@s.whatsapp.net","6282132745904@s.whatsapp.net"].includes(sender) ? true : false
 const pushname = msg.pushName
 const body = chats.startsWith(prefix) ? chats : ''
 const args = body.trim().split(/ +/).slice(1);
